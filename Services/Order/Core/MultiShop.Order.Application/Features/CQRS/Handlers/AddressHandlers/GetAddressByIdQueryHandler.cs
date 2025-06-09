@@ -17,10 +17,10 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
         {
             _repository = repository;
         }
-        public async Task<GetAddressByIdQueryResult> Handle(GetAddressByIdQuery query)
+        public async Task<GetOrderDetailByIdQueryResult> Handle(GetAddressByIdQuery query)
         {
             var values = await _repository.GetByIdAsync(query.Id);
-            return new GetAddressByIdQueryResult
+            return new GetOrderDetailByIdQueryResult
             {
                 AddressId = values.AddressId,
                 UserId = values.UserId,
