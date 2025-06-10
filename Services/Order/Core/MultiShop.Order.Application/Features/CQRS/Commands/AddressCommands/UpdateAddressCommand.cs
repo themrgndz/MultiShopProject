@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MultiShop.Order.Application.Features.CQRS.Commands.AddressCommands
+namespace MultiShop.Order.Application.Features.CQRS.Commands.UpdateAddressCommands
 {
     public class UpdateAddressCommand
     {
